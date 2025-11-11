@@ -17,10 +17,18 @@ public class Program {
             .bindTo(obj);
         int days = Integer.parseInt(args[2]);
         int person = Integer.parseInt(args[3]);
+
+        LuxuryTax lux = c.getAnnotation(LuxuryTax.class);
+        int l = lux != null ? lux.value() : 1;
+
+
         double rate = (double) handle.invoke(days, person);
+        double payment = days * l * rate * person;
+
 
         System.out.println("----------------------------------------");
         System.out.printf("The rate for %s will be : %.2f%n", c.getName(), rate);
+        System.out.printf("The total payment will be : %.2f%n", payment);
        
     }
 }
