@@ -1,0 +1,1 @@
+java -cp target/classes/:target/dependency/met-tour-1.0.0.jar app.Program $*
