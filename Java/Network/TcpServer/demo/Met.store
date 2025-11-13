@@ -1,9 +1,25 @@
-[
-	{"id":"cpu","cost":19000,"stock":50},
-	{"id":"motherboard","cost":8500,"stock":65},
-	{"id":"ddr","cost":3500,"stock":85},
-	{"id":"ssd","cost":4500,"stock":30},
-	{"id":"keyboard","cost":900,"stock":90},
-	{"id":"mouse","cost":550,"stock":120},
-	{"id":"monitor","cost":8000,"stock":20}
-]
+[ {
+  "id" : "fig",
+  "cost" : 78.0,
+  "stock" : 2
+}, {
+  "id" : "ssd",
+  "cost" : 444.0,
+  "stock" : 2
+}, {
+  "id" : "faizan",
+  "cost" : 34.0,
+  "stock" : 22
+}, {
+  "id" : "qr",
+  "cost" : 456.0,
+  "stock" : 1
+}, {
+  "id" : "keyboard",
+  "cost" : 33.0,
+  "stock" : 2
+}, {
+  "id" : "battery",
+  "cost" : 400.0,
+  "stock" : 12
+} ]
