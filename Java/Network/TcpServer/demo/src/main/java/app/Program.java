@@ -42,27 +42,27 @@ public class Program {
                 while(!connection.isClosed())
                 {
                     String name = reader.readLine();
-                    //Iteminfo info = model.getItem(name);
-                    // if(info != null)
-                    //     writer.printf("cost=%.2f&Stock=%d",info.cost(), info.stock());
-                    // writer.close();
-                    // reader.close();
-                    if(name.equals("close")) {
-                        writer.close();
-                        reader.close();
-                    } else if(name.equals("add")) {
-                        writer.printf("Enter the the Id : ");
-                        String nid = reader.readLine();
-                        writer.printf("Enter the the Cost : ");
-                        double ncst = Double.parseDouble(reader.readLine());
-                        writer.printf("Enter the the Stock : ");
-                        int nstc = Integer.parseInt(reader.readLine());
-                        model.addItem(nid , ncst , nstc);
-                    }else {
-                        Iteminfo info = model.getItem(name);
-                        if(info != null)
-                            writer.printf("cost=%.2f&Stock=%d",info.cost(), info.stock());
-                    }
+                    Iteminfo info = model.getItem(name);
+                    if(info != null)
+                        writer.printf("cost=%.2f&Stock=%d",info.cost(), info.stock());
+                    writer.close();
+                    reader.close();
+                    // if(name.equals("close")) {
+                    //     writer.close();
+                    //     reader.close();
+                    // } else if(name.equals("add")) {
+                    //     writer.printf("Enter the the Id : ");
+                    //     String nid = reader.readLine();
+                    //     writer.printf("Enter the the Cost : ");
+                    //     double ncst = Double.parseDouble(reader.readLine());
+                    //     writer.printf("Enter the the Stock : ");
+                    //     int nstc = Integer.parseInt(reader.readLine());
+                    //     model.addItem(nid , ncst , nstc);
+                    // }else {
+                    //     Iteminfo info = model.getItem(name);
+                    //     if(info != null)
+                    //         writer.printf("cost=%.2f&Stock=%d",info.cost(), info.stock());
+                    // }
                 }
             } finally {
                 //connection.close();
